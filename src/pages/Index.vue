@@ -97,6 +97,10 @@ export default {
       `${CORS_PROXY}/https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko`
     );
     this.newsList = response.items;
+    this.$q.notify({
+      message: "뉴스를 성공적으로 불러왔습니다.",
+      position: "center"
+    });
   },
   methods: {
     //날짜 포맷을 지금으로부터 얼마전인지로 바꾸는 메소드
