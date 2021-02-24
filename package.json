@@ -7,12 +7,13 @@
   "private": true,
   "scripts": {
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build && firebase deploy"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.18.1",
     "core-js": "^3.9.0",
+    "firebase-tools": "^9.5.0",
     "moment": "^2.29.1",
     "quasar": "^1.0.0",
     "rss-parser": "^3.12.0",
