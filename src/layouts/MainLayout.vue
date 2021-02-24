@@ -27,15 +27,17 @@
         style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd"
       >
         <q-list padding>
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="fas fa-home" color="primary" />
-            </q-item-section>
+          <router-link to="/">
+            <q-item clickable v-ripple>
+              <q-item-section avatar>
+                <q-icon name="fas fa-home" color="primary" />
+              </q-item-section>
 
-            <q-item-section>
-              홈
-            </q-item-section>
-          </q-item>
+              <q-item-section>
+                홈
+              </q-item-section>
+            </q-item>
+          </router-link>
 
           <router-link to="/about">
             <q-item clickable v-ripple>
